@@ -117,9 +117,6 @@
     }
 
     .button:hover {
-      background-color: #2980b9;
-    }
-    .button:hover {
             background-color: #2980b9;
             transform: translateY(-2px);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -142,7 +139,8 @@
 margin-top: 36px;
       }
 
-    .product:hover {
+    .product:hover
+    .product.touch {
       transform: translateY(-5px);
       box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     }
@@ -180,6 +178,14 @@ margin-top: 36px;
       }
     }
   </style>
+   <script>
+    window.addEventListener('load', function() {
+        var product = document.querySelector('.product');
+        product.addEventListener('touchstart', function() {
+            product.classList.add('touch');
+        });
+    });
+</script>
 </head>
 
 <body>
@@ -189,7 +195,7 @@ margin-top: 36px;
   <!-- Tu código HTML existente a partir de aquí -->
   <div class="container">
     <div class="boton">
-      <a href="www.what.com"> <button class="button">&#129146; Order products here &#x1F880;</button></a>
+      <a href="https://wa.link/w0dnja"> <button class="button">&#129146; Order products here &#x1F880;</button></a>
     </div>
   </div>
   <div class="container">
