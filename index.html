@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .header {
+      position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            
+            z-index: 9999;
+            margin-top: -20px;
+      padding: 0px;
+      text-align: center;
+      box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+
+    }
+
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .product {
+      position: relative;
+      background-color: #e8f0fe;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 5px;
+
+    }
+
+    .product .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: 87%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .product:hover .text-overlay {
+      opacity: 1;
+    }
+
+    .product h3 {
+      color: #ffffff;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .boton {
+      
+      position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 5px;
+            z-index: 9999;
+            margin-top: 80px;
+            text-align: center;
+            border-radius: 45%;
+
+     
+    }
+
+    .button {
+      display: inline-block;
+      padding: 7px 15px;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #3b9ad9;
+      color: #ffffff;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0 29px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+    .button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    .product {
+      position: relative;
+      background-color: #e8f0fea2;
+      border-radius: 10px;
+      padding: 20px;
+
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .product1 {
+      position: relative;
+      background-color: #e8f0fe00;
+      border-radius: 10px;
+      padding: 20px;
+margin-top: 36px;
+      }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .product p {
+      color: #ffffff;
+      font-size: 36px;
+    }
+    .product h3 {
+      color: #ffffff;
+      font-size: 36px;
+    }
+
+    
+    @media only screen and (max-width: 768px) {
+      
+      .container {
+        grid-template-columns: 1fr;
+      }
+      
+    }
+
+    @media only screen and (max-width: 345px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .product .text-overlay {
+        width: 86%;
+        height: 84%;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="./img/logoMilenitas-removebg.png" alt="logo" width="220px" height="140px">
+  </div>
+  <!-- Tu código HTML existente a partir de aquí -->
+  <div class="container">
+    <div class="boton">
+      <a href="www.what.com"> <button class="button">&#129146; Order products here &#x1F880;</button></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="product1">
+      <img src="" alt="Producto 1">
+      <div class="text-overlay">
+       
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 1">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 2">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="./img/zapato.jpg" alt="Producto 3">
+      <div class="text-overlay">
+        <h3>Bolichero</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+    
+    <!-- Agrega más productos aquí -->
+  </div>
+</body>
+
+</html>
